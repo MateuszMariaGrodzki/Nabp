@@ -3,10 +3,14 @@ package com.example.demo.controller;
 import com.example.demo.model.Currency;
 import com.example.demo.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Arrays;
+
 // rest controller daje adnotacje controller oraz do kazdej akcji kontrollera dorzuca adnotacje
 // response body
 @RequestMapping("api")
@@ -20,6 +24,5 @@ public class ApiController {
     public Currency index(@PathVariable String code){
         return currencyService.getCurrency(code);
     }
-
 
 }

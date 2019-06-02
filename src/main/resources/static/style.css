@@ -1,0 +1,12 @@
+
+.article {
+    color:red;
+}
+
+p{
+    color:green;
+}
+
+p#super-important{
+    color:blue;
+}
